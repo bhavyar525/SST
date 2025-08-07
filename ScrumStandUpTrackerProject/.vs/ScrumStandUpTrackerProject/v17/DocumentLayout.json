@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programs\\ScrumStandUpTrackerProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CE3853A-D0A5-4B5C-9638-F7B9CE4BFC68}|ScrumStandUpTrackerProject.csproj|c:\\programs\\scrumstanduptrackerproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CE3853A-D0A5-4B5C-9638-F7B9CE4BFC68}|ScrumStandUpTrackerProject.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CE3853A-D0A5-4B5C-9638-F7B9CE4BFC68}|ScrumStandUpTrackerProject.csproj|c:\\programs\\scrumstanduptrackerproject\\repositories\\dailystatusrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CE3853A-D0A5-4B5C-9638-F7B9CE4BFC68}|ScrumStandUpTrackerProject.csproj|solutionrelative:repositories\\dailystatusrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA25181-CA4B-4BFA-9A85-838DDC3AF4E7}|..\\SeleniumTestScrum\\SeleniumTestScrum.csproj|c:\\programs\\seleniumtestscrum\\statusuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407E6C16-F2F8-4F76-871C-E75490596940}|..\\ScrumUnitTesting\\ScrumUnitTesting.csproj|c:\\programs\\scrumunittesting\\developercontrollertesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DailyStatusRepositories.cs",
+              "DocumentMoniker": "C:\\Programs\\ScrumStandUpTrackerProject\\Repositories\\DailyStatusRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\DailyStatusRepositories.cs",
+              "ToolTip": "C:\\Programs\\ScrumStandUpTrackerProject\\Repositories\\DailyStatusRepositories.cs",
+              "RelativeToolTip": "Repositories\\DailyStatusRepositories.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwEYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:45:20.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusUITest.cs",
+              "DocumentMoniker": "C:\\Programs\\SeleniumTestScrum\\StatusUITest.cs",
+              "RelativeDocumentMoniker": "..\\SeleniumTestScrum\\StatusUITest.cs",
+              "ToolTip": "C:\\Programs\\SeleniumTestScrum\\StatusUITest.cs",
+              "RelativeToolTip": "..\\SeleniumTestScrum\\StatusUITest.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:26:21.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Programs\\ScrumStandUpTrackerProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Programs\\ScrumStandUpTrackerProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T01:12:38.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeveloperControllerTesting.cs",
+              "DocumentMoniker": "C:\\Programs\\ScrumUnitTesting\\DeveloperControllerTesting.cs",
+              "RelativeDocumentMoniker": "..\\ScrumUnitTesting\\DeveloperControllerTesting.cs",
+              "ToolTip": "C:\\Programs\\ScrumUnitTesting\\DeveloperControllerTesting.cs",
+              "RelativeToolTip": "..\\ScrumUnitTesting\\DeveloperControllerTesting.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T11:14:11.688Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
