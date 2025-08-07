@@ -1,6 +1,0 @@
-@ScrumStandUpTrackerProject_HostAddress = http://localhost:5238
-
-GET {{ScrumStandUpTrackerProject_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
