@@ -1,0 +1,316 @@
+/* Container for the form */
+form {
+  max-width: 400px;           /* form width */
+  margin: 60px auto;          /* center horizontally with top margin */
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Form headings */
+form h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: 700;
+}
+
+form h2 {
+  text-align: center;
+  margin: 10px 0 30px 0;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.25s ease;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="date"]:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+form button[type="submit"],
+form .add-status-btn,         /* if you share class */
+form .cancel-status-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px 0 10px 0;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+form button[type="submit"]:hover,
+form .add-status-btn:hover {
+  background-color: #0056b3;
+}
+
+form .cancel-status-btn {
+  background-color: #6c757d;
+  margin-top: 0;
+}
+
+form .cancel-status-btn:hover {
+  background-color: #565e64;
+}
+
+/* Paragraph and links */
+form p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+  user-select: none;
+}
+
+/* Navigation links inside paragraph */
+form p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease;
+}
+
+form p a:hover,
+form p a:focus {
+  color: #0056b3;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Message feedback below form */
+form p:last-child {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #28a745; /* success green by default */
+  user-select: text;
+}
+
+/* Red color for error message */
+form p.error {
+  color: #dc3545;
+}
+
+/* Responsive tweaks */
+@media only screen and (max-width: 440px) {
+  form {
+    padding: 20px 15px;
+    width: 95%;
+  }
+
+  form h1 {
+    font-size: 2rem;
+  }
+
+  form h2 {
+    font-size: 1.3rem;
+  }
+
+  form button[type="submit"],
+  form .add-status-btn,
+  form .cancel-status-btn {
+    font-size: 16px;
+  }
+}
+/* Container */
+.status-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px 25px;
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-header h2 {
+  font-size: 28px;
+  color: #222;
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  margin-right: 10px;
+}
+.logout-btn:hover {
+  background-color: #b02a37;
+}
+.add-status-btn, .cancel-status-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.add-status-btn {
+  background-color: #007bff;
+  color: white;
+}
+.add-status-btn:hover {
+  background-color: #0056b3;
+}
+.cancel-status-btn {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 10px;
+}
+.cancel-status-btn:hover {
+  background-color: #565e64;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  min-width: 150px;
+}
+
+tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Action buttons container - vertical stack for Edit/Delete */
+.action-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.action-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  width: 80px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.action-button.delete-btn {
+  background-color: #dc3545;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.action-button.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .status-container {
+    padding: 15px 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    font-size: 14px;
+  }
+  
+  table, th, td {
+    font-size: 14px;
+    min-width: 100px;
+  }
+  
+  .action-button {
+    width: 100%;
+  }
+}

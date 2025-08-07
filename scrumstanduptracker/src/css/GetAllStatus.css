@@ -1,0 +1,178 @@
+.status-container {
+  margin: 20px auto;
+  padding: 20px 25px;
+  background-color: #f9fafb;  /* Soft off-white with slight grayish tint */
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(30, 30, 30, 0.07); /* Softer shadow with cooler tone */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-header h2 {
+  font-size: 28px;
+  color: #1f2937; /* Dark slate gray */
+  margin: 0;
+}
+
+/* Buttons: Back and Logout */
+.back-btn, .logout-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  user-select: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+  min-width: 90px;
+}
+
+/* Back button (Teal) */
+.back-btn {
+  background-color: #14b8a6; /* Teal */
+  color: #fff;
+}
+
+.back-btn:hover,
+.back-btn:focus {
+  background-color: #0d9488; /* Darker teal */
+  outline: none;
+}
+
+/* Logout button (Coral) */
+.logout-btn {
+  background-color: #f97316; /* Coral/Orange */
+  color: #fff;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  background-color: #c2410c; /* Darker coral */
+  outline: none;
+}
+
+/* Filters Container */
+.filters-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for each filter control */
+.filters-container > * {
+  flex: 1 1 250px;
+  display: flex;
+  align-items: center;
+}
+
+/* Inputs in filters */
+.filters-container input[type="text"],
+.filters-container input[type="date"] {
+  flex-grow: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #9ca3af; /* Gray-400 */
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+
+.filters-container input[type="text"]:focus,
+.filters-container input[type="date"]:focus {
+  border-color: #14b8a6; /* Teal */
+  outline: none;
+}
+
+/* Filter buttons */
+.filters-container button {
+  margin-left: 10px;
+  background-color: #d1fae5; /* Light teal background */
+  color: #047857;  /* Dark greenish-teal text */
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.filters-container button:hover {
+  background-color: #a7f3d0; /* Darker light teal */
+}
+
+/* Clear Filters button (Burnt orange) */
+.clear-filters-btn {
+  background-color: #ea580c !important; /* Vibrant orange */
+  padding: 10px 18px !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+  flex-shrink: 0;
+  transition: background-color 0.25s ease;
+}
+
+.clear-filters-btn:hover {
+  background-color: #c2410c !important; /* Darker burnt orange */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(30, 64, 175, 0.1); /* Subtle blue shadow */
+}
+
+/* Table head with indigo shade */
+thead {
+  background-color: #4338ca; /* Indigo */
+  color: white;
+  user-select: none;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #e0e7ff; /* Light indigo border */
+  text-align: left;
+  min-width: 150px;
+}
+
+tbody tr:hover {
+  background-color: #eef2ff; /* Light indigo hover */
+  cursor: pointer;
+}
+
+/* Styling empty state and error message */
+.status-container > div[style*="color: red"] {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #dc2626; /* Strong red */
+}
+
+.status-container > div {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.status-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #6b7280; /* Medium gray */
+  margin-top: 40px;
+}

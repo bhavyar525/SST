@@ -1,0 +1,296 @@
+/* Container */
+.status-container {
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f0; /* soft cream */
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(182, 110, 65, 0.15); /* rust toned shadow */
+  color: #5b4636; /* dark brown text */
+  box-sizing: border-box;
+}
+
+/* Header */
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.status-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #7c5e3c; /* medium brown header */
+  flex-grow: 1;
+}
+
+.status-header span {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #a07c5b; /* lighter brown */
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #b66e41; /* rust orange */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background-color: #a05b33; /* darker rust */
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.get-all-status-btn,
+.add-new-status-btn {
+  background-color: #b66e41; /* rust orange */
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.get-all-status-btn:hover,
+.add-new-status-btn:hover {
+  background-color: #a05b33;
+}
+
+/* Add Status Form */
+.add-status-form {
+  max-width: 700px;
+  background-color: #fffaf5; /* very light cream */
+  border: 1px solid #deb887; /* light tan border */
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: 0 0 8px rgba(182, 110, 65, 0.15);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+/* Form inputs */
+.add-status-form input {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  font-size: 16px;
+  border: 1px solid #cdaa7d; /* medium tan */
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+  word-wrap: break-word;
+  white-space: normal;
+  transition: border-color 0.3s ease;
+  color: #5b4636;
+  background-color: #fffaf5;
+}
+
+.add-status-form input:focus {
+  border-color: #b66e41;
+  outline: none;
+  box-shadow: 0 0 7px rgba(182, 110, 65, 0.5);
+}
+
+/* Buttons inside form */
+.add-status-btn {
+  background-color: #7c5e3c; /* darker brown */
+  color: white;
+  margin-right: 12px;
+}
+
+.add-status-btn:hover {
+  background-color: #5b4326;
+}
+
+.cancel-status-btn {
+  background-color: #a83232 !important; /* brick red */
+  color: white !important;
+}
+
+.cancel-status-btn:hover {
+  background-color: #872828 !important;
+}
+
+/* Table Section */
+.table-section {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; /* enable horizontal scroll if table overflows */
+}
+
+/* Table Title */
+.table-section h4 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #5b4636;
+}
+
+/* Table Styles */
+.table-section table {
+  width: 100%; /* ensure table fits container */
+  border-collapse: collapse;
+  box-shadow: 0 0 12px rgba(182, 110, 65, 0.07);
+  background-color: #fffaf5;
+  font-size: 16px;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  word-break: break-word;
+}
+
+/* Table headers */
+.table-section th {
+  background-color: #b66e41; /* rust orange */
+  color: white;
+  font-weight: 700;
+  padding: 14px 18px;
+  border-bottom: 3px solid #a05b33;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Table cells */
+.table-section td {
+  padding: 12px 18px;
+  text-align: left;
+  border-bottom: 1px solid #f0e1cd; /* very light tan */
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: none; /* remove max-width to prevent clipping */
+  gap: 18px;
+  color: #5b4636;
+  background-color: #fffaf5;
+}
+
+/* Hover row effect */
+.table-section tbody tr:hover {
+  background-color: #f7eee5; /* very soft cream */
+}
+
+/* Edit mode input fields */
+.table-section td input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #cdaa7d;
+  border-radius: 5px;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  background-color: #fffaf5;
+  color: #5b4636;
+}
+
+/* Editable inputs and textareas */
+.editable-input,
+.editable-textarea {
+  width: 100%;
+  max-width: 250px;
+  min-height: 80px;
+  height: auto;
+  padding: 6px 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+  overflow: visible;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #cdaa7d;
+  border-radius: 4px;
+  background-color: #fffaf5;
+  color: #5b4636;
+}
+
+/* Container for action buttons in table */
+.action-btn-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table buttons */
+.table-section button {
+  width: 80px;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  line-height: 36px;
+  transition: background-color 0.25s ease;
+}
+
+/* Edit button */
+.table-section button:first-of-type {
+  background-color: #7c5e3c;
+  color: white;
+}
+
+/* Edit button hover */
+.table-section button:first-of-type:hover {
+  background-color: #5b4326;
+}
+
+/* Delete button */
+.table-section button:last-of-type {
+  background-color: #a83232;
+  color: white;
+}
+
+/* Delete button hover */
+.table-section button:last-of-type:hover {
+  background-color: #872828;
+}
+
+/* Edit Status Page Wrapper */
+.edit-status-page-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf6f0; /* soft cream */
+}
+
+/* Add Status Form Responsive */
+.form-section.add-status-form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px 30px;
+  box-shadow: 0 0 15px rgba(182, 110, 65, 0.1);
+  background-color: #fffaf5;
+  border-radius: 8px;
+}

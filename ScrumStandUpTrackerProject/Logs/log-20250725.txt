@@ -1,0 +1,389 @@
+2025-07-25 17:05:34 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 17:05:35 [INF] Now listening on: https://localhost:7079
+2025-07-25 17:05:35 [INF] Now listening on: http://localhost:5238
+2025-07-25 17:05:35 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 17:05:35 [INF] Hosting environment: Development
+2025-07-25 17:05:35 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 17:05:36 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 17:05:36 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 325.4734ms
+2025-07-25 17:05:36 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 17:05:36 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 17:05:36 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 27.7386ms
+2025-07-25 17:05:36 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.3294ms
+2025-07-25 17:05:36 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 17:05:36 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.9144ms
+2025-07-25 17:07:10 [INF] Request starting HTTP/2 GET https://localhost:7079/api/DailyStatus - null null
+2025-07-25 17:07:10 [INF] Executing endpoint 'DailyStatusController.GetDailyStatuses (ScrumStandUpTrackerProject)'
+2025-07-25 17:07:10 [INF] Route matched with {action = "GetDailyStatuses", controller = "DailyStatus"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ScrumStandUpTrackerProject.Models.DailyStatus]]] GetDailyStatuses() on controller DailyStatusController (ScrumStandUpTrackerProject).
+2025-07-25 17:07:11 [INF] Fetching all daily statuses.
+2025-07-25 17:07:11 [INF] Service: Fetching all DailyStatus records
+2025-07-25 17:07:11 [INF] Fetching all DailyStatus records
+2025-07-25 17:07:13 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Blockers], [d].[DeveloperId], [d].[DeveloperName], [d].[DidYesterday], [d].[DoingToday], [d].[SubmissionDate], [d].[TaskDetails], [d0].[Id], [d0].[Email], [d0].[PasswordHash], [d0].[UserName]
+FROM [DailyStatuses] AS [d]
+INNER JOIN [Developers] AS [d0] ON [d].[DeveloperId] = [d0].[Id]
+2025-07-25 17:07:13 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ScrumStandUpTrackerProject.Models.DailyStatus, ScrumStandUpTrackerProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 17:07:13 [INF] Executed action DailyStatusController.GetDailyStatuses (ScrumStandUpTrackerProject) in 2627.5317ms
+2025-07-25 17:07:13 [INF] Executed endpoint 'DailyStatusController.GetDailyStatuses (ScrumStandUpTrackerProject)'
+2025-07-25 17:07:13 [INF] Request finished HTTP/2 GET https://localhost:7079/api/DailyStatus - 200 null application/json; charset=utf-8 2968.8685ms
+2025-07-25 17:18:40 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 17:18:41 [INF] Now listening on: https://localhost:7079
+2025-07-25 17:18:41 [INF] Now listening on: http://localhost:5238
+2025-07-25 17:18:41 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 17:18:41 [INF] Hosting environment: Development
+2025-07-25 17:18:41 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 17:18:42 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 17:18:42 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 338.2141ms
+2025-07-25 17:18:42 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 17:18:42 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 17:18:42 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 39.3696ms
+2025-07-25 17:18:42 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.1347ms
+2025-07-25 17:18:42 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 17:18:42 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.4249ms
+2025-07-25 17:20:14 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/register - application/json 82
+2025-07-25 17:20:14 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 17:20:14 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ScrumStandUpTrackerProject.DTOs.RegisterDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 17:20:17 [INF] Executed DbCommand (90ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Developers] AS [d]
+        WHERE LOWER([d].[Email]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-07-25 17:20:17 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject) in 3086.8177ms
+2025-07-25 17:20:17 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 17:20:17 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Email already exists.
+   at ScrumStandUpTrackerProject.Repositories.AuthRepository.RegisterAsync(RegisterDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Repositories\AuthRepository.cs:line 32
+   at ScrumStandUpTrackerProject.Controllers.AuthController.Register(RegisterDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Controllers\AuthController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-25 17:20:17 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/register - 500 null text/plain; charset=utf-8 3537.5182ms
+2025-07-25 22:09:51 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:09:51 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:09:51 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:09:52 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:09:52 [INF] Hosting environment: Development
+2025-07-25 22:09:52 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:09:52 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:09:53 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 358.8566ms
+2025-07-25 22:09:53 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:09:53 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:09:53 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 32.9686ms
+2025-07-25 22:09:53 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.4338ms
+2025-07-25 22:09:53 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:09:53 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.0535ms
+2025-07-25 22:10:48 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/register - application/json 85
+2025-07-25 22:10:48 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:10:48 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ScrumStandUpTrackerProject.DTOs.RegisterDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 22:11:06 [INF] Executed DbCommand (88ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Developers] AS [d]
+        WHERE LOWER([d].[Email]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-07-25 22:11:07 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Developers] ([Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-07-25 22:11:07 [INF] Executing OkObjectResult, writing value of type 'ScrumStandUpTrackerProject.DTOs.DeveloperDTO'.
+2025-07-25 22:11:07 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject) in 18388.8938ms
+2025-07-25 22:11:07 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:11:07 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/register - 200 null application/json; charset=utf-8 18850.4403ms
+2025-07-25 22:11:39 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:11:39 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:11:39 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:11:39 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:11:39 [INF] Hosting environment: Development
+2025-07-25 22:11:39 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:11:40 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:11:40 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:11:40 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:11:40 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 332.5775ms
+2025-07-25 22:11:40 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 21.3514ms
+2025-07-25 22:11:40 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.5531ms
+2025-07-25 22:11:40 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:11:40 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.2154ms
+2025-07-25 22:13:30 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/register - application/json 79
+2025-07-25 22:13:30 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:13:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ScrumStandUpTrackerProject.DTOs.RegisterDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 22:13:40 [INF] Executed DbCommand (59ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Developers] AS [d]
+        WHERE LOWER([d].[Email]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-07-25 22:14:14 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Email], [d].[PasswordHash], [d].[UserName]
+FROM [Developers] AS [d]
+2025-07-25 22:16:03 [ERR] Failed executing DbCommand (15ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Developers] ([Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-07-25 22:16:03 [ERR] An exception occurred in the database while saving changes for context type 'ScrumStandUpTrackerProject.DataLayer.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-07-25 22:16:03 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject) in 153231.8353ms
+2025-07-25 22:16:03 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:16:03 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScrumStandUpTrackerProject.Repositories.AuthRepository.RegisterAsync(RegisterDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Repositories\AuthRepository.cs:line 42
+   at ScrumStandUpTrackerProject.Controllers.AuthController.Register(RegisterDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Controllers\AuthController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-25 22:16:03 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/register - 500 null text/plain; charset=utf-8 153816.3509ms
+2025-07-25 22:20:10 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:20:10 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:20:10 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:20:10 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:20:10 [INF] Hosting environment: Development
+2025-07-25 22:20:10 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:20:11 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:20:11 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:20:11 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:20:11 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 325.7783ms
+2025-07-25 22:20:11 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.3361ms
+2025-07-25 22:20:11 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 74.9895ms
+2025-07-25 22:20:12 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:20:12 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 56.0297ms
+2025-07-25 22:20:49 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/register - application/json 80
+2025-07-25 22:20:49 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:20:49 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ScrumStandUpTrackerProject.DTOs.RegisterDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 22:20:53 [INF] Executed DbCommand (122ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Developers] AS [d]
+        WHERE LOWER([d].[Email]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-07-25 22:20:54 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Developers] ([Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-07-25 22:20:54 [INF] Executing OkObjectResult, writing value of type 'ScrumStandUpTrackerProject.DTOs.DeveloperDTO'.
+2025-07-25 22:20:54 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject) in 5275.4054ms
+2025-07-25 22:20:54 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Register (ScrumStandUpTrackerProject)'
+2025-07-25 22:20:54 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/register - 200 null application/json; charset=utf-8 5623.3321ms
+2025-07-25 22:35:47 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:35:47 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:35:48 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:35:48 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:35:48 [INF] Hosting environment: Development
+2025-07-25 22:35:48 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:35:48 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:35:48 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:35:48 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:35:48 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 357.4928ms
+2025-07-25 22:35:48 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 28.6589ms
+2025-07-25 22:35:49 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.2325ms
+2025-07-25 22:35:49 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:35:49 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.0973ms
+2025-07-25 22:38:16 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:38:17 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:38:17 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:38:17 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:38:17 [INF] Hosting environment: Development
+2025-07-25 22:38:17 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:38:17 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:38:18 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 335.8038ms
+2025-07-25 22:38:18 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:38:18 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:38:18 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 39.8804ms
+2025-07-25 22:38:18 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.8945ms
+2025-07-25 22:38:18 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:38:18 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.6974ms
+2025-07-25 22:38:49 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/login - application/json 56
+2025-07-25 22:38:49 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 22:38:49 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ScrumStandUpTrackerProject.DTOs.LoginDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 22:38:53 [INF] Executed DbCommand (116ms) [Parameters=[@__dto_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Email], [d].[PasswordHash], [d].[UserName]
+FROM [Developers] AS [d]
+WHERE [d].[UserName] = @__dto_UserName_0
+2025-07-25 22:38:54 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-25 22:38:54 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject) in 4669.0793ms
+2025-07-25 22:38:54 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 22:38:54 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/login - 200 null application/json; charset=utf-8 5033.7155ms
+2025-07-25 22:42:41 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 22:42:41 [INF] Now listening on: https://localhost:7079
+2025-07-25 22:42:41 [INF] Now listening on: http://localhost:5238
+2025-07-25 22:42:41 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 22:42:41 [INF] Hosting environment: Development
+2025-07-25 22:42:41 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 22:42:42 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 22:42:42 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 22:42:42 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 334.9602ms
+2025-07-25 22:42:42 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 22:42:42 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 52.4923ms
+2025-07-25 22:42:42 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.9983ms
+2025-07-25 22:42:42 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 22:42:42 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.8795ms
+2025-07-25 22:43:29 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/login - application/json 56
+2025-07-25 22:43:29 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 22:43:29 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ScrumStandUpTrackerProject.DTOs.LoginDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 22:43:34 [INF] Executed DbCommand (134ms) [Parameters=[@__dto_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Email], [d].[PasswordHash], [d].[UserName]
+FROM [Developers] AS [d]
+WHERE [d].[UserName] = @__dto_UserName_0
+2025-07-25 22:43:34 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-25 22:43:34 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject) in 5067.4093ms
+2025-07-25 22:43:34 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 22:43:35 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/login - 200 null application/json; charset=utf-8 5524.2064ms
+2025-07-25 23:02:04 [INF] User profile is available. Using 'C:\Users\Bhavya.Buchamola\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 23:02:04 [INF] Now listening on: https://localhost:7079
+2025-07-25 23:02:04 [INF] Now listening on: http://localhost:5238
+2025-07-25 23:02:04 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 23:02:04 [INF] Hosting environment: Development
+2025-07-25 23:02:04 [INF] Content root path: C:\Programs\ScrumStandUpTrackerProject
+2025-07-25 23:02:05 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - null null
+2025-07-25 23:02:05 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-25 23:02:05 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null
+2025-07-25 23:02:05 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - 200 null text/html;charset=utf-8 379.6706ms
+2025-07-25 23:02:05 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 16537 application/javascript; charset=utf-8 17.6381ms
+2025-07-25 23:02:05 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.3671ms
+2025-07-25 23:02:05 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - null null
+2025-07-25 23:02:05 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.1695ms
+2025-07-25 23:02:30 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/login - application/json 56
+2025-07-25 23:02:30 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 23:02:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ScrumStandUpTrackerProject.DTOs.LoginDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 23:02:34 [INF] Executed DbCommand (109ms) [Parameters=[@__dto_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Email], [d].[PasswordHash], [d].[UserName]
+FROM [Developers] AS [d]
+WHERE [d].[UserName] = @__dto_UserName_0
+2025-07-25 23:02:35 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-25 23:02:35 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject) in 4779.3249ms
+2025-07-25 23:02:35 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 23:02:35 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/login - 200 null application/json; charset=utf-8 5204.2385ms
+2025-07-25 23:03:45 [INF] Request starting HTTP/2 POST https://localhost:7079/api/Auth/login - application/json 54
+2025-07-25 23:03:45 [INF] Executing endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 23:03:45 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ScrumStandUpTrackerProject.DTOs.LoginDTO) on controller ScrumStandUpTrackerProject.Controllers.AuthController (ScrumStandUpTrackerProject).
+2025-07-25 23:03:45 [INF] Executed DbCommand (19ms) [Parameters=[@__dto_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Email], [d].[PasswordHash], [d].[UserName]
+FROM [Developers] AS [d]
+WHERE [d].[UserName] = @__dto_UserName_0
+2025-07-25 23:03:45 [INF] Executed action ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject) in 597.3679ms
+2025-07-25 23:03:45 [INF] Executed endpoint 'ScrumStandUpTrackerProject.Controllers.AuthController.Login (ScrumStandUpTrackerProject)'
+2025-07-25 23:03:45 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: Invalid credentials
+   at ScrumStandUpTrackerProject.Repositories.AuthRepository.LoginAsync(LoginDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Repositories\AuthRepository.cs:line 52
+   at ScrumStandUpTrackerProject.Controllers.AuthController.Login(LoginDTO dto) in C:\Programs\ScrumStandUpTrackerProject\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-25 23:03:45 [INF] Request finished HTTP/2 POST https://localhost:7079/api/Auth/login - 500 null text/plain; charset=utf-8 816.817ms

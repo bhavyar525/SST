@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ScrumStandUpTrackerProject.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\ScrumUnitTesting\\ScrumUnitTesting.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
